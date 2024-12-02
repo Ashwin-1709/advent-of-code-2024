@@ -4,3 +4,5 @@ This winter I am trying to learn `golang` with AoC 2024!
 ### Solutions
 #### Day 1
 Brute force the answer.
+#### Day 2
+Brute force check for all possible cases.
