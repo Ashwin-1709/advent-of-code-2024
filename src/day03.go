@@ -39,6 +39,7 @@ func extractMuls(command string) ([]pair, []pair) {
 	integerPattern := regexp.MustCompile(`\d+`)
 	matches := pattern.FindAllString(command, -1)
 	enabled := true
+	
 	for _, match := range matches {
 		switch match {
 		case "do()":
