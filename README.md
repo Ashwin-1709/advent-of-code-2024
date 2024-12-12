@@ -8,3 +8,7 @@ Brute force the answer.
 Brute force check for all possible cases.
 #### Day 3
 Use regex to extract valid `muls` and functions `do()` & `don't()`.
+#### Day 4
+Pivot on `X` in first part and `A` in second part for the search.
+#### Day 5
+Create an adjacency matrix and check for validity of each pair in the list.
