@@ -15,3 +15,6 @@ Create an adjacency matrix and check for validity of each pair in the list.
 #### Day 6
 - BFS can be used in part 1. 
 - Brute force can be used in part 2 by checking for all positions if adding an obstacle leads to a cycle. Cycle can be detected by maintaining if we have already visited a cell with the same directional vectors.
+#### Day 7
+- Bitmasking can be used to try all combinations. This can be done in $O(2^{n})$.
+- Instead of two options, we now have three options for each operator. Brute force can be done with time complexity $O(3^{n})$.
