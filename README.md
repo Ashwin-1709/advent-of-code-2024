@@ -18,3 +18,5 @@ Create an adjacency matrix and check for validity of each pair in the list.
 #### Day 7
 - Bitmasking can be used to try all combinations. This can be done in $O(2^{n})$.
 - Instead of two options, we now have three options for each operator. Brute force can be done with time complexity $O(3^{n})$.
+#### Day 8
+- For each cell, we can check if it can be an antinode with respect to any antenna. Checking if a cell is in same direction with two antennas, we can use dot product and check if the two antennas and the cell form a collinear line.
