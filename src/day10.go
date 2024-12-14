@@ -67,12 +67,11 @@ func main() {
 
 	for x := range grid {
 		for y := range grid[x] {
-			if grid[x][y] != 0 {
-				continue
+			if grid[x][y] == START {
+				dfs(x, y)
+				ans += len(unique_vis)
+				unique_vis = make(map[tuple]bool)
 			}
-			dfs(x, y)
-			ans += len(unique_vis)
-			unique_vis = make(map[tuple]bool)
 		}
 	}
 
