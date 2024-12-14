@@ -20,3 +20,5 @@ Create an adjacency matrix and check for validity of each pair in the list.
 - Instead of two options, we now have three options for each operator. Brute force can be done with time complexity $O(3^{n})$.
 #### Day 8
 - For each cell, we can check if it can be an antinode with respect to any antenna. Checking if a cell is in same direction with two antennas, we can use dot product and check if the two antennas and the cell form a collinear line.
+#### Day 9
+Simulate the process by maintaining blocks of info containing number of files, number of spaces and id of block.
