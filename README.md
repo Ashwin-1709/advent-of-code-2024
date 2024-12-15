@@ -55,3 +55,6 @@ Create an adjacency matrix and check for validity of each pair in the list.
 Simulate the process by maintaining blocks of info containing number of files, number of spaces and id of block.
 #### Day 10
 Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructure like Set/Map.
+#### Day 11
+- For first part, we can simulate the process.
+- For second part, it is not feasible to simulate the process for a large number of steps. We can treat each stone as an individual problem and use recursive dp to avoid recomputing of overlapping subproblems.
