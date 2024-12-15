@@ -58,3 +58,5 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 #### Day 11
 - For first part, we can simulate the process.
 - For second part, it is not feasible to simulate the process for a large number of steps. We can treat each stone as an individual problem and use recursive dp to avoid recomputing of overlapping subproblems.
+#### Day 12
+- For first part, we can run dfs/bfs and check for each cell what is its contribution to the perimeter and area.
