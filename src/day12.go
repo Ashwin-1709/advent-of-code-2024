@@ -1,4 +1,4 @@
-package main
+vpackage main
 
 import (
 	"bufio"
@@ -35,6 +35,10 @@ func trace(border map[BorderInfo]bool) int {
 	sides := 0
 
 	check := func(curx, cury, id, loc int) {
+		dot := dx[id]*dx[loc] + dy[id]*dy[loc]
+		if dot != 0 {
+			return
+		}
 		for {
 			nx, ny := curx+dx[id], cury+dy[id]
 			if !ok(nx, ny) {
@@ -57,13 +61,10 @@ func trace(border map[BorderInfo]bool) int {
 		border[corner] = false
 		sides++
 		x, y, id := corner.x, corner.y, corner.dir
-		if id < 2 {
-			check(x, y, 2, id)
-			check(x, y, 3, id)
-		} else {
-			check(x, y, 0, id)
-			check(x, y, 1, id)
-		}
+		check(x, y, 0, id)
+		check(x, y, 1, id)
+		check(x, y, 2, id)
+		check(x, y, 3, id)
 	}
 	return sides
 }
