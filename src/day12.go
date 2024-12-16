@@ -61,10 +61,9 @@ func trace(border map[BorderInfo]bool) int {
 		border[corner] = false
 		sides++
 		x, y, id := corner.x, corner.y, corner.dir
-		check(x, y, 0, id)
-		check(x, y, 1, id)
-		check(x, y, 2, id)
-		check(x, y, 3, id)
+		for d := range dx {
+			check(x, y, d, id)
+		}
 	}
 	return sides
 }
