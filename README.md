@@ -61,3 +61,6 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 #### Day 12
 - For first part, we can run dfs/bfs and check for each cell what is its contribution to the perimeter and area.
 - For second part, we can maintain the borders along with their direction relative to the cell we encounter during the dfs/bfs from first part and then for every border we can sweep left / right relative to the direction to include other borders as part of one side.
+#### Day 13
+- For first part, we can try for all combinations of pushes since a button can only be pushed a maximum of 100 times.
+- For second part, There will be either an unique solution or no solution exists. We can formulate the unknowns - number of pushes to button A and B as linear equations in two variables and solve the equations.
