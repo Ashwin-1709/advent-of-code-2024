@@ -64,3 +64,6 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 #### Day 13
 - For first part, we can try for all combinations of pushes since a button can only be pushed a maximum of 100 times.
 - For second part, There will be either an unique solution or no solution exists. We can formulate the unknowns - number of pushes to button A and B as linear equations in two variables and solve the equations.
+#### Day 14
+- New positions at time `t` are simply $x + v_{x}t$ and $y + v_{y}t$ for an infinite grid. We can adjust the new positions to be bounded in a 101x103 grid using simple maths.
+- For second part, I just simulated and printed all possible arrangements till 10000 seconds and searched for a pattern with many `#` in a row, Fortunately there were only 33 possibilities.
