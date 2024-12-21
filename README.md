@@ -67,3 +67,5 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 #### Day 14
 - New positions at time `t` are simply $x + v_{x}t$ and $y + v_{y}t$ for an infinite grid. We can adjust the new positions to be bounded in a 101x103 grid using simple maths.
 - For second part, I just simulated and printed all possible arrangements till 10000 seconds and searched for a pattern with many `#` in a row, Fortunately there were only 33 possibilities.
+#### Day 15
+- Simple simulation, pushing of boxes can be simulated via recursion.
