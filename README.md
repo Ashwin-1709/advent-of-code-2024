@@ -71,4 +71,4 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 - Simple simulation, pushing of boxes can be simulated via recursion.
 #### Day 16
 - Run dijkstra from source node with state as $(cost, x, y, direction)$.
-- Run a reverse dijkstra from the sink node backtracking the path, in the end a node $x$ would fall on an optimal path if for any $d \{\in d_1,\dots d_4\}$ $dis(src \to x, dir: d) + dis(sink \to x, dir: d) = \min_{d \in d_1,\dots d_4}dis(src \to sink, dir: d)$
+- Run a reverse dijkstra from the sink node backtracking the path, in the end a node $x$ would fall on an optimal path if for any $d \in d_1,\dots d_4$ $dis(src \to x, dir: d) + dis(sink \to x, dir: d) = \min_{d \in d_1,\dots d_4}dis(src \to sink, dir: d)$
