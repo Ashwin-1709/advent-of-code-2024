@@ -72,3 +72,6 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 #### Day 16
 - Run dijkstra from source node with state as $(cost, x, y, direction)$.
 - Run a reverse dijkstra from the sink node backtracking the path, in the end a node $x$ would fall on an optimal path if for any $d \in d_1,\dots d_4$ $dis(src \to x, dir: d) + dis(sink \to x, dir: d) = \min_{d \in d_1,\dots d_4}dis(src \to sink, dir: d)$
+#### Day 18
+- Run bfs from $(0, 0)$ to $(n - 1, m - 1)$ after simulating the blocks.
+- We can do a binary search in this case, if path is blocked at time $t$, it will be blocked at time $t + 1$ as well. So we can do binary search and find the first byte which causes the path to be blocked.
