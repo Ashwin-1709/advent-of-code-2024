@@ -78,3 +78,6 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 #### Day 20
 - Run bfs to get shortest distance for all points from both $S$ and $E$. Then for each wall (`#`), find pair of valid neighbours and check if taking the cheat across the wall reduces the time.
 - For any pair of valid nodes, we can find the manhattan distance (this is the min distance if we take cheat between the nodes). If this is within the cheat limit, we can try taking the cheat and check how much it reduces the time.
+#### Day 23
+- Brute force for all nodes beginning with `t`.
+- Finding the largest clique of a graph is NP-Hard. I assumed the input was in a way that the clique size won't blow up so I found all cliques of $size \leq 20$ and the largest clique was one of them.
