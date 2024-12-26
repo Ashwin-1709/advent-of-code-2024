@@ -75,6 +75,8 @@ Run a dfs from each `trailhead` and maintain unique trail-ends in a datastructur
 #### Day 18
 - Run bfs from $(0, 0)$ to $(n - 1, m - 1)$ after simulating the blocks.
 - We can do a binary search in this case, if path is blocked at time $t$, it will be blocked at time $t + 1$ as well. So we can do binary search and find the first byte which causes the path to be blocked.
+#### Day 19
+We can use dp to count the number of ways a towel can be built with given patterns, $dp[i] \to$ number of ways that $towel[i \dots n]$ can be built where $n$ is the length of the towel. 
 #### Day 20
 - Run bfs to get shortest distance for all points from both $S$ and $E$. Then for each wall (`#`), find pair of valid neighbours and check if taking the cheat across the wall reduces the time.
 - For any pair of valid nodes, we can find the manhattan distance (this is the min distance if we take cheat between the nodes). If this is within the cheat limit, we can try taking the cheat and check how much it reduces the time.
