@@ -83,3 +83,5 @@ We can use dp to count the number of ways a towel can be built with given patter
 #### Day 23
 - Brute force for all nodes beginning with `t`.
 - Finding the largest clique of a graph is NP-Hard. I assumed the input was in a way that the clique size won't blow up so I found all cliques of $size \leq 20$ and the largest clique was one of them.
+#### Day 25
+- Brute force the possible combinations for each lock. Since the computation is independent, it can be done asynchronously for each lock using `goroutines`, `channels` & `sync.Waitgroup`.
